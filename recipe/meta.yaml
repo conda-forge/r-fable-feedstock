@@ -1,4 +1,4 @@
-{% set version = "0.1.2" %}
+{% set version = "0.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fable_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fable/fable_{{ version }}.tar.gz
-  sha256: 30228b64ade853021aa4f925f0578e08aa4c3f018b3940ffb7ea6f2e5bc7b66c
+  sha256: c3c359ee3825497603d89fe079f238fe665799262df23f3d15e9fb1f8c537efc
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   rpaths:
     - lib/R/lib/
@@ -25,11 +25,11 @@ requirements:
     - {{ compiler('m2w64_c') }}        # [win]
     - {{ compiler('cxx') }}            # [not win]
     - {{ compiler('m2w64_cxx') }}      # [win]
-    - {{posix}}filesystem        # [win]
-    - {{posix}}make
-    - {{posix}}sed               # [win]
-    - {{posix}}coreutils         # [win]
-    - {{posix}}zip               # [win]
+    - {{ posix }}filesystem        # [win]
+    - {{ posix }}make
+    - {{ posix }}sed               # [win]
+    - {{ posix }}coreutils         # [win]
+    - {{ posix }}zip               # [win]
   host:
     - r-base
     - r-rcpp >=0.11.0
@@ -40,7 +40,7 @@ requirements:
     - r-tsibble >=0.8.0
   run:
     - r-base
-    - {{native}}gcc-libs         # [win]
+    - {{ native }}gcc-libs         # [win]
     - r-rcpp >=0.11.0
     - r-dplyr >=0.8.0
     - r-fabletools
@@ -56,13 +56,11 @@ test:
 about:
   home: https://fable.tidyverts.org
   license: GPL-3
-  summary: Provides a collection of commonly used univariate and multivariate time series forecasting
-    models including automatically selected exponential  smoothing (ETS) and autoregressive
-    integrated moving average (ARIMA) models. These models work within the 'fable' framework
-    provided by the 'fabletools' package, which provides the tools to evaluate, visualise,
-    and combine models  in a workflow consistent with the tidyverse.
+  summary: Provides a collection of commonly used univariate and multivariate time series forecasting models including automatically selected exponential  smoothing
+    (ETS) and autoregressive integrated moving average (ARIMA) models. These models work within the 'fable' framework provided by the 'fabletools' package, which
+    provides the tools to evaluate, visualise, and combine models  in a workflow consistent with the tidyverse.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
