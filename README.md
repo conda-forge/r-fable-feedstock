@@ -3,7 +3,7 @@ About r-fable
 
 Home: https://fable.tidyverts.org
 
-Package license: GPL-3
+Package license: GPL-3.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-fable-feedstock/blob/master/LICENSE.txt)
 
