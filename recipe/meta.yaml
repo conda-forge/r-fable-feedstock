@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 2
   rpaths:
     - lib/R/lib/
     - lib/
@@ -33,20 +33,24 @@ requirements:
   host:
     - r-base
     - r-rcpp >=0.11.0
-    - r-dplyr >=0.8.0
-    - r-fabletools
-    - r-rlang >=0.2.0
+    - r-dplyr >=1.0.0
+    - r-fabletools >=0.3.0
+    - r-rlang >=0.4.6
     - r-tidyr
-    - r-tsibble >=0.8.0
+    - r-tsibble >=0.9.0
+    - r-tibble
+    - r-distributional
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
     - r-rcpp >=0.11.0
-    - r-dplyr >=0.8.0
-    - r-fabletools
-    - r-rlang >=0.2.0
+    - r-dplyr >=1.0.0
+    - r-fabletools >=0.3.0
+    - r-rlang >=0.4.6
     - r-tidyr
-    - r-tsibble >=0.8.0
+    - r-tsibble >=0.9.0
+    - r-tibble
+    - r-distributional
 
 test:
   commands:
