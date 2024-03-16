@@ -3,6 +3,7 @@ About r-fable-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-fable-feedstock/blob/main/LICENSE.txt)
 
+
 About r-fable
 -------------
 
@@ -11,6 +12,7 @@ Home: https://fable.tidyverts.org
 Package license: GPL-3.0-only
 
 Summary: Provides a collection of commonly used univariate and multivariate time series forecasting models including automatically selected exponential  smoothing (ETS) and autoregressive integrated moving average (ARIMA) models. These models work within the 'fable' framework provided by the 'fabletools' package, which provides the tools to evaluate, visualise, and combine models  in a workflow consistent with the tidyverse.
+
 About r-fable
 -------------
 
@@ -153,7 +155,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance

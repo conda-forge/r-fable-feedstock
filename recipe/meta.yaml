@@ -1,4 +1,4 @@
-{% set version = "0.3.3" %}
+{% set version = "0.3.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fable_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fable/fable_{{ version }}.tar.gz
-  sha256: fbd445d80f5e1451e3a80077e3e1853ec82c56e635f5caa62e968b082d158d66
+  sha256: 9bae61f31af2867693f42ebbab336e38aad300f13a39072322a0df860c4bfc2f
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
