@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fable_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fable/fable_{{ version }}.tar.gz
-  sha256: 0dda772ed9be08cd2f3d37355a02b9252c16c5c46e0a4e32fd0bdeddbddb9d36
+  sha256: 759c361a8e94e9c11b84799b7a4f73ffc21dc23756b601d7ba217bc7d03ae413
 
 build:
   number: 0
